@@ -13,22 +13,30 @@ public class SonIgualesTest {
 	@Test
 	public void SonIgualesTest1() {
 		CadenasAlumno caTest = new CadenasAlumno();
-		assertTrue(caTest.sonIguales("entornos", "ento") == "entornos".equals("ento"));
+		boolean resultado_real = caTest.sonIguales("entornos", "ento");
+		boolean resultado_esperado = false;
+		assertEquals(resultado_esperado, resultado_real);
 	}
 	
 	public void SonIgualesTest2() {
 		CadenasAlumno caTest = new CadenasAlumno();
-		assertTrue(caTest.sonIguales("ento", "entornos") == "ento".equals("entornos"));
+		boolean resultado_real = caTest.sonIguales("ento", "entornos");
+		boolean resultado_esperado = false;
+		assertEquals(resultado_esperado, resultado_real);
 	}
 	
 	public void SonIgualesTest3() {
 		CadenasAlumno caTest = new CadenasAlumno();
-		assertTrue(caTest.sonIguales("entornos", "sonrotne") == "entornos".equals("sonrotne"));
+		boolean resultado_real = caTest.sonIguales("entornos", "sonrotne");
+		boolean resultado_esperado = false;
+		assertEquals(resultado_esperado, resultado_real);
 	}
 	
 	public void SonIgualesTest4() {
 		CadenasAlumno caTest = new CadenasAlumno();
-		assertTrue(caTest.sonIguales("entornos", "entornos") == "entornos".equals("entornos"));
+		boolean resultado_real = caTest.sonIguales("entornos", "entornos");
+		boolean resultado_esperado = true;
+		assertEquals(resultado_esperado, resultado_real);
 	}
 
 }
