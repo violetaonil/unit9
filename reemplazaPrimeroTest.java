@@ -9,6 +9,8 @@ public class reemplazaPrimeroTest {
 	@Test
 	public void reemplazaPrimerotest() {
 		CadenasAlumno caTest = new CadenasAlumno();
-		assertTrue(caTest.reemplazaPrimero("aaaa bbbb cccc aaaa", "aaaa", "dddd") == "aaaa bbbb cccc aaaa".replaceAll("aaaa", "dddd"));
+		String resultado_real = caTest.reemplazaPrimero("aaaa bbbb cccc aaaa", "aaaa", "dddd");
+		String resultado_esperado = "dddd bbbb cccc aaaa";
+		assertEquals(resultado_esperado, resultado_real);
 	}
 }

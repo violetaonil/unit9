@@ -14,7 +14,9 @@ public class ComparaIgnorandoMayusculasTest {
 	@Test
 	public void ComparaIgnorandoMayustest() {
 		CadenasAlumno caTest = new CadenasAlumno();
-		assertTrue(caTest.esMayor("ENTORNOS", "entornos") == "ENTORNOS".equalsIgnoreCase("entornos"));
+		boolean resultado_real = caTest.comparaIgnorandoMayusculas("ENTORNOS", "entornos");
+		boolean resultado_esperado = true;
+		assertEquals(resultado_esperado, resultado_real);
 	}
 
 }

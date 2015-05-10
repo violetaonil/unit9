@@ -9,7 +9,9 @@ public class reemplazaTodosTest {
 	@Test
 	public void reemplazaTodostest() {
 		CadenasAlumno caTest = new CadenasAlumno();
-		assertTrue(caTest.reemplazaTodos("aaaa bbbb cccc aaaa", "aaaa", "dddd") == "aaaa bbbb cccc aaaa".replaceAll("aaaa", "dddd"));
+		String resultado_real = caTest.reemplazaTodos("aaaa bbbb cccc aaaa", "aaaa", "dddd");
+		String resultado_esperado = "dddd bbbb cccc dddd";
+		assertEquals(resultado_esperado, resultado_real);
 	}
 
 }

@@ -14,7 +14,9 @@ public class esMenorTest {
 	@Test
 	public void esMenortest() {
 		CadenasAlumno caTest = new CadenasAlumno();
-		assertTrue(caTest.esMenor("entornos", "ento") == "entornos".compareTo("ento")>0);
+		boolean resultado_real = caTest.esMenor("ENTORNOS", "ento");
+		boolean resultado_esperado = false;
+		assertEquals(resultado_esperado, resultado_real);
 	}
 
 }

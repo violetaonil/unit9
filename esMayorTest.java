@@ -14,7 +14,9 @@ public class esMayorTest {
 	@Test
 	public void esMayortest() {
 		CadenasAlumno caTest = new CadenasAlumno();
-		assertTrue(caTest.esMayor("entornos", "ento") == "ento".compareTo("entornos")>0);
+		boolean resultado_real = caTest.esMayor("ENTORNOS", "ento");
+		boolean resultado_esperado = true;
+		assertEquals(resultado_esperado, resultado_real);
 	}
 
 }
